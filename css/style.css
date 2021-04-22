@@ -227,7 +227,12 @@ dl {
     margin: 0px 10px;
 }
 
-
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.0rem !important;
+    font-weight: 500;
+    line-height: 1.2;
+}
 
 
 /********************MEDIA START**********************/
@@ -489,26 +494,102 @@ dl {
     }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 425px) {
     .nav-bar {
         width: 100%;
         display: flex;
-        background: #20202060;
+        background: #202020;
         justify-content: start;
         align-items: center;
-        height: 45px;
+        height: 47px;
         position: fixed;
     }
+    .h1-text {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 5px;
+        cursor: pointer;
+    }
+    .mx-links {
+        color: white;
+        text-decoration: none;
+        font-size: 11px;
+        cursor: pointer;
+        padding: 0px 5px;
+        text-transform: uppercase;
+        font-weight: 800;
+        transition: 1s;
+        /* margin-left: 8px; */
+    }
     .central-banner {
+        margin-top: 47px;
+    }
+    .c-b-text {
+        margin-top: 196px;
         width: 100%;
-        height: 318px;
-        background: url(../img/dezo-media-banner.jpg)no-repeat center center / cover;
-        align-items: flex-end;
+        font-size: 27px;
+        color: black;
+        padding: 0px 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .c-b-title {
+        width: 100%;
+        font-size: 11px;
+        color: rgb(0, 0, 0);
+        padding: 0px 30px;
+        font-weight: bold;
+        /* padding-right: 167px; */
+        text-align: center;
     }
     .central-codes {
         width: 100%;
         background: url(../img/banner-central-links.png)no-repeat center center / cover;
-        height: 193px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 382px) {
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        background: #202020;
+        justify-content: start;
+        align-items: center;
+        height: 47px;
+        position: fixed;
+    }
+    .h1-text {
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 0px 8px;
+        cursor: pointer;
+    }
+    .mx-links {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+        cursor: pointer;
+        padding: 0px 4px;
+        text-transform: uppercase;
+        font-weight: 800;
+        transition: 1s;
+        /* margin-left: 8px; */
+    }
+    .fa-search {
+        color: white;
+        font-size: 16px;
+        margin: 0px 5px;
+        transition: 1s;
+    }
+    .central-codes {
+        width: 100%;
+        background: url(../img/banner-central-links.png)no-repeat center center / cover;
+        height: 178px;
         display: flex;
         align-items: center;
     }
@@ -518,25 +599,22 @@ dl {
         padding: 6px;
         transition: 0.5s;
         cursor: pointer;
-        padding-bottom: 5px;
+        padding-bottom: 7px;
     }
-    .col-codes {
-        width: 100%;
-        flex-wrap: wrap;
-        padding: 4px 4px 4px 4px;
+    .section-cols-imge {
+        width: 196px;
+        height: 198px;
+        padding-left: 10px;
     }
     .col-text-section {
         color: white;
-        font-size: 9px;
-        padding-top: 12px;
-        margin-right: 3px;
-        margin-left: 16px;
+        font-size: 8px;
+        padding-top: 0px;
+        margin-right: 9px;
+        margin-left: 10px;
     }
-    .main-title {
-        color: white;
-        font-size: 11px;
-        font-weight: 700;
-        padding: 0px 0px 0px 31px;
-        cursor: pointer;
+    p {
+        margin-top: 0;
+        margin-bottom: 0.5rem !important;
     }
 }
