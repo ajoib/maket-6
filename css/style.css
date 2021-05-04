@@ -6,20 +6,36 @@
     box-sizing: border-box;
 }
 .container{
-    max-width: 1200px;
     width: 100%;
     margin: auto;
-    padding: 0 15px;
+    padding: 0px 0px !important;
 }
-.menu{
+.menu {
     width: 100%;
-    min-height: 10px;
     background: rgb(46, 46, 46);
-    padding: 20px 0;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
+}
+.icon-navbar{
+    width: 100%;
+    background: rgb(46, 46, 46);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.navbar-img{
+    width: 200px;
+    height: 100%;
+}
+.menu_ul{
+    height: 72px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .menu_navbar {
     width: 100%;
@@ -27,7 +43,7 @@
     justify-content: center;
     align-items: center;
     height: 23px;
-    padding-top: 35px;
+    /* padding-top: 35px; */
 }
 .menu_ul ul{
     display: flex;
@@ -36,12 +52,12 @@
 }
 .menu_ul ul a {
     margin: 0 2px;
-    padding: 0px 15px;
+    padding: 0px 10px;
     font-weight: 900;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     display: flex;
-    margin-top: 49px;
+    margin-top: 0px;
     cursor: pointer;
     transition: 1s;
 }
@@ -56,11 +72,6 @@
     justify-content: center;
     margin: auto;
     display: none;
-}
-.menu_ul{
-    width: 50%;
-    justify-content: center;
-    text-align: center;
 }
 .menu_ul.active{
     transform: translateX(-800%);
@@ -99,96 +110,48 @@
     color: white;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
-    cursor: default;
-    transition: 1s;
+    font-size: 21px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding-bottom: 4px;
 }
 .links_migs:hover{
-    color: red;
-    cursor: pointer;
+    border-bottom: 1px solid red;
 }
 .menu_btn:hover{
     background: red;
-}
-.social_network{
-    color: black;
-    font-size: 34px;
-    padding: 0 6px;
-    display: none;
-    transition: 0.5s;
-}
-.social_network:hover{
-    color: rgb(255, 0, 0);
-    font-size: 45px;
-    padding: 4px 4px;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-}
-.social_networks {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 48px;
-}
-.social_network_T:hover{
-    border-radius: 50%;
-    color: rgb(0, 166, 255) !important;
-    background: rgb(255, 255, 255) !important;
-}
-.social_network_CH:hover{
-    border-radius: 50%;
-    color: rgb(255, 132, 0);
-    background: white;
-}
-.social_network_P:hover{
-    color: red;
-    border-radius: 50%;
-    background: white;
+
 }
 .icon_open {
     color: white;
     font-size: 31px;
     cursor: pointer;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    /* margin-bottom: 10px; */
+    /* margin-left: 10px; */
 }
-/**********************************************************************************************************************************/
-.social_network_CH1{
-    display: none !important;
+.icon-img {
+    width: 170px;
+    height: 52px;
+    position: absolute;
 }
-.social_network_P2{
-    display: none !important;
-}
-.social_network_Tw3{
-    display: none !important;
-}
-/*****************************************MEDIA*****************************************/
 
-
-@media (max-width: 850px){
+@media (max-width: 839px){
     .menu_ul{
         display: none;
         
     }
     .menu_ul.active {
         display: block;
-        width: 50%;
+        width: 40%;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
-        background: #202020;
+        background: #151515;
         align-items: center;
         transform: translateX(+0%);
         transition: 1s;
         padding-top: 0px;
-    }
-    .social_network {
-        color: rgb(255, 255, 255);
-        font-size: 34px;
-        padding: 0 5px;
-        margin-left: 10px;
-        display: block;
     }
     .menu_ul ul {
         flex-direction: column;
@@ -208,17 +171,21 @@
         justify-content: start;
         text-align: start;
     }
-    .menu_navbar{
+    .menu_navbar {
         width: 100%;
         display: flex;
-        justify-content: right;
-        padding-right: 100px;
+        justify-content: center;
+        align-items: center;
+        height: 52px;
+        /* padding-top: 35px; */
     }
     .icon_open {
         color: white;
         font-size: 31px;
         cursor: pointer;
-        margin-bottom: 34px;
+        /* margin-bottom: 34px; */
+        /* padding-right: 0px; */
+        margin-right: 745px;
     }
     .icon_close{
         color: white;
@@ -271,291 +238,14 @@
         font-size: 24px;
         cursor: default;
     }
-    .h5{
-        color: white;
-        font-size: 24px;
-        margin-left: 50%;
-    }
     .menu_ul ul a {
         margin: 0 2px;
-        padding: 2px 15px;
+        padding: 0px 12px;
         font-weight: 900;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
         display: flex;
-        margin-top: 31px;
-    }
-    .social_network_Tw:hover{
-        color: rgb(0, 115, 255);
-        background: white;
-        border-radius: 50%;
-    }
-}
-@media(max-width: 750px){
-    .icon_open {
-        color: white;
-        font-size: 36px;
-        cursor: pointer;
-        margin-bottom: 10px;
-        margin-left: 10px;
-    }
-    .vidios {
-        color: red;
-        margin-left: 70%;
-        font-size: 32px;
-        display: block;
-    }
-    .links_migs {
-        color: white;
-        text-decoration: none;
-        font-size: 26px;
-        cursor: default;
-        font-family: math;
-    }
-    .menu_ul ul a {
-        margin: 0 2px;
-        padding: 16px 9px;
-        font-weight: 900;
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
-        display: flex;
-    }
-    .links_migs {
-        color: white;
-        text-decoration: none;
-        font-size: 22px;
-        cursor: default;
-        font-family: math;
-    }
-    .vidios {
-        color: red;
-        margin-left: 73%;
-        font-size: 29px;
-        display: block;
+        margin-top: 26px;
     }
     
-    .vidios2 {
-        color: red;
-        margin-left: 47%;
-        font-size: 29px;
-        display: block;
-    }
-    .vidios3 {
-        color: red;
-        margin-left: 66%;
-        font-size: 31px;
-        display: block;
-    }
-    .vidios4 {
-        color: red;
-        margin-left: 76%;
-        font-size: 31px;
-        display: block;
-    }
-    .vidios5 {
-        color: red;
-        margin-left: 76%;
-        font-size: 29px;
-        display: block;
-    }
-    .menu_navbar {
-        width: 100%;
-        display: flex;
-        height: 23px;
-        padding-top: 11px;
-    }
-}
-
-@media(max-width: 650px){
-    .icon_open {
-        color: white;
-        font-size: 27px;
-        cursor: pointer;
-        margin-bottom: 12px;
-        margin-left: 10px;
-    }
-    .links_migs {
-        color: white !important;
-        text-decoration: none;
-        font-size: 19px;
-        cursor: default;
-        font-family: math;
-    }
-    .vidios {
-        color: red;
-        margin-left: 73%;
-        font-size: 29px;
-        display: block;
-    }
-    .links_migs {
-        color: white;
-        text-decoration: none;
-        font-size: 19px;
-        cursor: default;
-        font-family: math;
-    }
-}
-
-@media(max-width: 550px){
-    .menu_ul ul a {
-        margin: 0 -3px;
-        padding: 15px 9px;
-        font-weight: 900;
-        text-transform: uppercase;
-        color: black;
-        display: flex;
-    }
-    .social_network:hover{
-        background: white;
-        padding: 2px 2px;
-        font-size: 28px;
-    }
-    .links_migs {
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        cursor: default;
-        font-family: math;
-    }
-    .social_network {
-        color: rgb(255, 255, 255);
-        font-size: 27px;
-        padding: 0 5px;
-        margin-left: 7px;
-        display: block;
-    }
-}
-
-@media(max-width: 450px){
-    .links_migs {
-        color: white;
-        text-decoration: none;
-        font-size: 13px;
-        cursor: default;
-        font-family: math;
-    }
-    .menu_ul.active {
-        display: block;
-        width: 50%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #202020;
-        align-items: center;
-        transform: translateX(+0%);
-        transition: 1s;
-        padding-top: 0px;
-    }
-    .vidios {
-        color: red;
-        margin-left: 68%;
-        font-size: 22px;
-        display: block;
-    }
-    .vidios2 {
-        color: red;
-        margin-left: 43%;
-        font-size: 22px;
-        display: block;
-    }
-    .vidios3 {
-        color: red;
-        margin-left: 61%;
-        font-size: 22px;
-        display: block;
-    }
-    .vidios4 {
-        color: red;
-        margin-left: 71%;
-        font-size: 22px;
-        display: block;
-    }
-    .vidios5 {
-        color: red;
-        margin-left: 70%;
-        font-size: 22px;
-        display: block;
-    }
-    .icon_close {
-        color: white;
-        font-size: 23px;
-        cursor: pointer;
-    }
-    .icon_open {
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-        margin-bottom: 11px;
-        margin-left: 11px;
-    }
-    .menu {
-        width: 100%;
-        min-height: 10px;
-        background: rgb(46, 46, 46);
-        padding: 20px 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        height: 45px;
-    }
-    .icon_open {
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-        margin-bottom: 24px;
-        margin-left: 9px;
-    }
-}
-
-@media(max-width: 400px){
-    .social_network_Tw{
-        display: none;
-    }
-    .social_network_P{
-        display: none;
-    }
-    .social_network_CH{
-        display: none;
-    }
-    .social_network_CH1{
-        display: block;
-        font-size: 45px;
-        transition: 0.5s;
-    }
-    .social_network_CH1:hover{
-        color: rgb(255, 119, 0);
-        background: white;
-        font-size: 45px;
-    }
-    .social_network_P2{
-        display: block;
-        font-size: 45px;
-    }
-    .social_network_P2:hover{
-        color: rgb(255, 0, 0);
-        background: white;
-        font-size: 45px;
-    }
-    .social_network_Tw3 {
-        display: block;
-        font-size: 45px;
-    }
-    .social_network{
-        font-size: 40px;
-        cursor: pointer;
-    }
-    .social_networks2 {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-top: 9px;
-    }
-    .social_networks2 {
-        justify-content: center;
-        text-align: center;
-        display: block;
-        margin-top: 9px;
-    }
 }
