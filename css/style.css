@@ -136,7 +136,7 @@
     position: absolute;
 }
 
-@media (max-width: 839px){
+@media (max-width: 950px){
     .menu_ul{
         display: none;
         
