@@ -143,12 +143,12 @@
     }
     .menu_ul.active {
         display: block;
-        width: 40%;
+        width: 60%;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
-        background: #151515;
+        background: #151515c7;
         align-items: center;
         transform: translateX(+0%);
         transition: 1s;
