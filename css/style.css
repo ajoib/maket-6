@@ -270,12 +270,21 @@
 }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 720px) {
     .icon_open {
         color: white;
         font-size: 31px;
         cursor: pointer;
         margin-right: 604px !important;
+    }
+    
+    .menu_navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 67px;
+        /* padding-top: 35px; */
     }
 }
 
